@@ -4,10 +4,14 @@ import { DirectEventHandler } from 'react-native/Libraries/Types/CodegenTypes';
 
 type Prop1 = Readonly<{
     propContent: string;
+    propOptionalContent1?: string;
+    propOptionalContent2?: string;
 }>;
 
 type Prop2 = Readonly<{
     propContent: string;
+    propOptionalContent1?: string;
+    propOptionalContent2?: string;
 }>;
 
 export type NativeEvent1 = Readonly<{

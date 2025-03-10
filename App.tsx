@@ -37,7 +37,11 @@ function App(): React.JSX.Element {
           <Text style={styles.text}>NewArch Reproducer</Text>
           <NewArchView
               style={styles.newarchview}
-              prop1={{propContent: prop1Content}}
+              prop1={{
+                propContent: prop1Content,
+                propOptionalContent1: "optional1",
+                propOptionalContent2: "optional2"
+              }}
               prop2={{propContent: prop2Content}}
               onNativeEvent1={nativeEvent1}
               onNativeEvent2={nativeEvent2}

@@ -12,10 +12,14 @@ type Prop2 = Readonly<{
 
 export type NativeEvent1 = Readonly<{
     nativeEventContent: string;
+    nativeEventOptionalContent1?: string;
+    nativeEventOptionalContent2?: string;
 }>;
 
 export type NativeEvent2 = Readonly<{
     nativeEventContent: string;
+    nativeEventOptionalContent1?: string;
+    nativeEventOptionalContent2?: string;
 }>;
 
 export interface NewArchViewProps extends ViewProps {

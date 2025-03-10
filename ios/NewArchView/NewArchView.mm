@@ -37,6 +37,8 @@ using namespace facebook::react;
       // EMIT NATIVEEVENT1 WITH OPTIONAL DATA
       NewArchViewEventEmitter::OnNativeEvent1 event1;
       event1.nativeEventContent = [self randomString];
+      event1.nativeEventOptionalContent1 = [self randomString];
+      event1.nativeEventOptionalContent2 = [self randomString];
       self.eventEmitter.onNativeEvent1(event1);
       
       // EMIT NATIVEEVENT2 WITHOUT OPTIONAL DATA

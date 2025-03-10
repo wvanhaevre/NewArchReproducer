@@ -61,9 +61,13 @@ using namespace facebook::react;
   // RECEIVING DATA
   if (newViewProps.prop1.propContent != oldViewProps.prop1.propContent) {
     _label1.text = @(newViewProps.prop1.propContent.c_str());
+    NSLog(@"propOptionalContent1: %@", @(newViewProps.prop1.propOptionalContent1.c_str()));
+    NSLog(@"propOptionalContent2: %@", @(newViewProps.prop1.propOptionalContent2.c_str()));
   }
   if (newViewProps.prop2.propContent != oldViewProps.prop2.propContent) {
     _label2.text = @(newViewProps.prop2.propContent.c_str());
+    NSLog(@"propOptionalContent1: %@", @(newViewProps.prop2.propOptionalContent1.c_str()));
+    NSLog(@"propOptionalContent2: %@", @(newViewProps.prop2.propOptionalContent2.c_str()));
   }
   
   [super updateProps:props oldProps:oldProps];

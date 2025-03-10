@@ -1,0 +1,10 @@
+ios/build
+ios/.xcode.env.local
+ios/.DS_Store
+src/specs/.DS_Store
+vendor
+.DS_Store
+ios/NewArchReproducer.xcworkspace/xcuserdata
+ios/Pods
+node_modules
+.idea

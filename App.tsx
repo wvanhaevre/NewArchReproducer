@@ -14,9 +14,21 @@ function App(): React.JSX.Element {
 
   const nativeEvent1 = (event: NativeSyntheticEvent<NativeEvent1>) => {
     setProp1Content(event.nativeEvent.nativeEventContent);
+    if (event.nativeEvent.nativeEventOptionalContent1 !== undefined) {
+      console.log('nativeEvent1 optionalContent1 received:', event.nativeEvent.nativeEventOptionalContent1);
+    }
+    if (event.nativeEvent.nativeEventOptionalContent2 !== undefined) {
+      console.log('nativeEvent1 optionalContent2 received:', event.nativeEvent.nativeEventOptionalContent2);
+    }
   };
   const nativeEvent2 = (event: NativeSyntheticEvent<NativeEvent2>) => {
     setProp2Content(event.nativeEvent.nativeEventContent);
+    if (event.nativeEvent.nativeEventOptionalContent1 !== undefined) {
+      console.log('nativeEvent2 optionalContent1 received:', event.nativeEvent.nativeEventOptionalContent1);
+    }
+    if (event.nativeEvent.nativeEventOptionalContent2 !== undefined) {
+      console.log('nativeEvent2 optionalContent2 received:', event.nativeEvent.nativeEventOptionalContent2);
+    }
   };
 
   return (
